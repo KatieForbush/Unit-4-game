@@ -3,28 +3,38 @@
 <html lang="en">
 <head>
     <title>Crystal Game</title>
-    <link rel="stylesheet" type="text/css" href="/Users/kate/Desktop/Unit-4-game/assets/css/style.css">.
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <p>
+        <h1>
         Here we have four crystals all of different value. The number shown is the number to reach. Touch a crystal to begin.
+        </h1>
     </p>
+    <!---Displayed computer #-->
+    <div id="display" class="computer#" data-computer="displayNumber">
+
+    </div>
+    <div id="user">
+
+    </div>
     <!-- Buttons -->
-    <div class="crystals">
-        <div id="cry1">
-            <img src="/Users/kate/Desktop/Unit-4-game/assets/images/Crystal.png" alt="cry1" style="width:15%">
+    <div>
+        <div id="cry1" class="crystals" data-crystal="crystal1">
+            <img src="assets/images/Crystal.png" alt="cry1"  style="width:15%">
             <!--<button class="btn">Button</button>-->
         </div>
-        <div id="cry2">
-            <img src="/Users/kate/Desktop/Unit-4-game/assets/images/Crystal.png" alt="cry2" style="width:15%">
+        <div id="cry2" class="crystals" data-crystal="crystal2">
+            <img src="assets/images/Crystal.png" alt="cry2" style="width:15%">
             <!--<button class="btn">Button</button>-->
         </div>
-        <div id="cry3">
-            <img src="/Users/kate/Desktop/Unit-4-game/assets/images/Crystal.png" alt="cry3" style="width:15%">
+        <div id="cry3" class="crystals" data-crystal="crystal3">
+            <img src="assets/images/Crystal.png" alt="cry3" style="width:15%">
             <!--<button class="btn">Button</button>-->
         </div>
-        <div id="cry4">
-            <img src="/Users/kate/Desktop/Unit-4-game/assets/images/Crystal.png" alt="cry4" style="width:15%">
+        <div id="cry4" class="crystals" data-crystal="crystal4">
+            <img src="assets/images/Crystal.png" alt="cry4" style="width:15%">
             <!--<button class="btn">Button</button>-->
         </div>
     </div>
@@ -32,7 +42,7 @@
 
 
 
-
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
