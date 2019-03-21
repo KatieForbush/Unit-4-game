@@ -44,5 +44,9 @@ $(document).ready(function () {
         }
         console.log(userScore);
     })
-
+    var winner = "YOU WON!"
+    $('.Wins').update(userScore===display)
+        alert(winner)
+    
+    
 })

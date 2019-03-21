@@ -1,5 +1,10 @@
 body {
-    background-image: url("/Users/kate/Desktop/Unit-4-game/assets/images/backgrond.jpg");
-    margin: 0px;
-    height: 100%;
+    background-image: url("../../assets/images/background.jpg");
+    margin: 20px;
+    background-size: 100%;
+}
+
+.crystals {
     width: 100%;
+    display: inline;
+}
