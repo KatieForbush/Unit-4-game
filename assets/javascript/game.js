@@ -1,6 +1,6 @@
 //let randomNumbner = [];
 let displayCharacters = [];
-let winsAndLoses = [];
+let loses = [];
 let minNum = 1
 let maxNum = 10
 let cry1 = Math.floor(Math.random() * 10) + 1;
@@ -8,6 +8,7 @@ let cry2 = Math.floor(Math.random() * 10) + 1;
 let cry3 = Math.floor(Math.random() * 10) + 1;
 let cry4 = Math.floor(Math.random() * 10) + 1;
 let userScore = 0;
+
 
 
 //generate random computer numner
@@ -44,9 +45,13 @@ $(document).ready(function () {
         }
         console.log(userScore);
     })
-    var winner = "YOU WON!"
-    $('.Wins').update(userScore===display)
-        alert(winner)
-    
-    
-})
+        if (Wins = display) {
+        wins++;
+     }
+     $("#Wins").text(Wins)
+    })
+
+   // $(".Wins").update(userScore === display); {
+   //     alert(winner)
+
+   // }
