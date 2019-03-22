@@ -1,4 +1,4 @@
-//let randomNumbner = [];
+let randomNumbner;
 let displayCharacters = [];
 let loses = [];
 let minNum = 1
@@ -21,8 +21,9 @@ $(document).ready(function () {
     let beginNumberMax = 120;
     randomNumberFromRange(beginNumberMin, beginNumberMax);
     function randomNumberFromRange(min, max) {
+        randomNumbner = (Math.floor(Math.random() * (max - min + 1) + min));
         $("#display")
-            .text(Math.floor(Math.random() * (max - min + 1) + min));
+            .text(randomNumbner)
     }
     $('#user').text(userScore)
 
@@ -44,11 +45,13 @@ $(document).ready(function () {
             $('#user').text(userScore)
         }
         console.log(userScore);
-    })
-        if (Wins = display) {
+        if (userScore === randomNumbner){
         wins++;
-     }
-     $("#Wins").text(Wins)
+        $("#Wins").text(Wins)
+        }
+    })
+
+     
     })
 
    // $(".Wins").update(userScore === display); {
