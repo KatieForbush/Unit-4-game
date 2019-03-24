@@ -11,10 +11,14 @@ let cry3 = Math.floor(Math.random() * 10) + 1;
 $("#cry3").attr("value", cry3)
 let cry4 = Math.floor(Math.random() * 10) + 1;
 $("#cry4").attr("value", cry4)
+
+//$(".crystals").attr("value", Math.floor(Math.random()* 10) + 1)
+
 let userScore = 0;
 let losses = 0;
 let wins = 0;
-
+//let .crysals = ...
+//$#crystals.attr(value)
 
 
 //generate random computer numner
